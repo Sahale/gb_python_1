@@ -9,7 +9,6 @@
 list_1 = [1, 2, 4, 6, 7, 11, 25, 32, 32, 65, 128, 129]
 
 for elem in list_1:
-
     if list_1.index(elem) == 0:
         if elem % 2 == 0:
             list_2 = [elem / 4]
@@ -20,5 +19,4 @@ for elem in list_1:
             list_2.append(elem / 4)
         else:
             list_2.append(elem * 2)
-
 print(list_2)
