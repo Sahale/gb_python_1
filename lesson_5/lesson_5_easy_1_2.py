@@ -11,9 +11,11 @@ import os
 dir = (os.getcwd() + '/')
 
 i = 1
+
 while i <= 9:
     try:
-        os.mkdir(dir + 'dir_' + str(i))
-    except FileExistsError:
+        os.rmdir(dir + 'dir_' + str(i))
+    except FileNotFoundError:
         pass
     i += 1
+
